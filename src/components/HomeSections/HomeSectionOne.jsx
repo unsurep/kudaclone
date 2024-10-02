@@ -21,6 +21,7 @@ const HomeSectionOne=()=>{
     return(
         <>
             <section className="mt-40">
+                {/* div 1a */}
                <div className="flex   px-[10rem]">
                     {/* left div */}
                     <div data-aos="fade-up"
@@ -70,8 +71,11 @@ const HomeSectionOne=()=>{
                         data-aos-duration="3000" className="ml-[20rem]  ">
                         <Image src={kuda1} width={0} height={0} alt="image" className="w-[20rem] "/>
                     </div>
+                </div>
 
-
+                {/* div 1b */}
+                <div>
+                    
                 </div>
 
 

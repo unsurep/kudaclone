@@ -28,27 +28,34 @@ const NavBar=()=>{
     const [personal, setPersonal]=useState(false);
     const [business, setBusiness]=useState(false);
     const [company, setCompany]=useState(false);
-    
-
-
-
+    const [helpp, setHelpp]=useState(false);
 
     const togglePersonal=()=>{
         setPersonal(!personal)
         setBusiness(false)
         setCompany(false)
+        setHelpp(false)
     }
 
     const toggleBusiness=()=>{
         setBusiness(!business)
         setPersonal(false)
         setCompany(false)
+        setHelpp(false)
     }
 
     const toggleCompany=()=>{
         setCompany(!company)
         setBusiness(false)
         setPersonal(false)
+        setHelpp(false)
+    }
+
+    const toggleHelp=()=>{
+        setHelpp(!helpp)
+        setPersonal(false)
+        setBusiness(false)
+        setCompany(false)
     }
 
     return(
@@ -143,8 +150,16 @@ const NavBar=()=>{
                         <li className="cursor-pointer">About Us</li>
                     </ul> }
                     
-
-                    <li className="flex items-center gap-2">Help <MdArrowDropDown /></li>
+                    
+                    <li onClick={toggleHelp} className="flex items-center gap-2 cursor-pointer">Help <MdArrowDropDown /></li>
+                    {/* toggle help */}
+                    {helpp===true && <ul className="absolute top-[4rem] right-[35rem] bg-zinc-200 py-6 px-3 text-sm flex flex-col gap-4 rounded-[6px] text-black">
+                        <li className="cursor-pointer">Get Help</li>
+                        <li className="cursor-pointer">Scam Awareness</li>
+                        <li className="cursor-pointer">FAQs</li>
+                        <li className="cursor-pointer">Contact Us</li>
+                        <li className="cursor-pointer">Self Help</li>
+                    </ul> }
 
                 </ul>
 
