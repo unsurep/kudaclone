@@ -23,7 +23,8 @@ const HomeSectionOne=()=>{
             <section className="mt-40">
                <div className="flex   px-[10rem]">
                     {/* left div */}
-                    <div>
+                    <div data-aos="fade-up"
+                        data-aos-duration="3000" >
                         <h1 className="text-purple-900 font-extrabold text-4xl">The money app for <br /> Africans.</h1>
                         <p className="my-5">Make free transfers, enjoy cashless payment <br /> options and earn interest on your savings with <br /> Kuda.</p>
 
@@ -66,7 +67,7 @@ const HomeSectionOne=()=>{
 
                     {/* right div */}
                     <div data-aos="flip-right"
-                        data-aos-duration="3000" className="ml-[15rem]  ">
+                        data-aos-duration="3000" className="ml-[23rem]  ">
                         <Image src={kuda1} width={0} height={0} alt="image" className="w-[20rem] "/>
                     </div>
 
