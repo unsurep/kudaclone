@@ -19,44 +19,17 @@ import { TfiWorld } from "react-icons/tfi";
 import { FaTv } from "react-icons/fa";
 import { HiOutlineCubeTransparent } from "react-icons/hi";
 import { SiTransportforlondon } from "react-icons/si";
-import { RiDraftFill } from "react-icons/ri";
-import { RiMoneyDollarBoxFill } from "react-icons/ri";
-import { BsFillBagFill } from "react-icons/bs";
 
 const NavBar=()=>{
+
     const [personal, setPersonal]=useState(false);
-    const [business, setBusiness]=useState(false);
-    const [company, setCompany]=useState(false);
-    const [help, setHelp]=useState(false);
+
+
+
 
     const togglePersonal=()=>{
-        setPersonal(!personal);
-        setBusiness(false);
-        setCompany(false);
-        setHelp(false);
+        setPersonal(!personal)
     }
-
-    const toggleBusiness=()=>{
-        setPersonal(false);
-        setBusiness(!business);
-        setCompany(false);
-        setHelp(false);
-    }
-
-    const toggleCompany=()=>{
-        setPersonal(false);
-        setBusiness(false);
-        setCompany(!company);
-        setHelp(false);
-    }
-
-    const toggleHelp=()=>{
-        setPersonal(false);
-        setBusiness(false);
-        setCompany(false);
-        setHelp(!help)
-    }
-
 
     return(
         <>
@@ -66,12 +39,10 @@ const NavBar=()=>{
                 </div>
 
 
-                <ul className="flex items-center gap-10 ml-[16rem] text-purple-900">
-                    <li className="flex items-center gap-2 cursor-pointer">Personal <MdArrowDropDown /></li>
+                <ul className="flex items-center gap-8 ml-[10rem] text-purple-900">
+                    <li onClick={togglePersonal} className="flex items-center gap-2 cursor-pointer">Personal <MdArrowDropDown /></li>
 
-
-
-                    <div className="absolute top-[4rem]  flex bg-white h-screen">
+                    {personal===true && <div className="absolute top-[4rem]  flex bg-white h-screen">
                         <div className="bg-red-100 h-screen px-6 py-3 rounded-[5px]">
                             <ul className="text-sm text-black flex flex-col gap-4 cursor-pointer">
                                 <li className="flex items-center gap-2"> <span className="bg-neutral-50 p-2 rounded-full"><RiHome4Fill /></span>Discover Personal</li>
@@ -85,8 +56,8 @@ const NavBar=()=>{
 
 
                         <div className="bg-neutral-100 h-screen px-8 py-3 rounded-[5px]">
-                            <h1 className="text-neutral-500 text-[12px]">PAYMENT</h1>
-                            <ul className="text-sm text-black flex flex-col gap-4 cursor-pointer pb-5">
+                            <h1 className="text-neutral-500 text-[12px]">Payment</h1>
+                            <ul className="text-sm text-black flex flex-col gap-4 cursor-pointer">
                                 <li className="flex items-center gap-2"><span className="bg-red-50 p-2 rounded-full text-red-300"><HiLightBulb /></span>Electricity</li>
                                 <li className="flex items-center gap-2"><span className="bg-green-50 p-2 rounded-full text-green-300"><AiOutlineHeatMap /></span>Airtime</li>
                                 <li className="flex items-center gap-2"> <span className="bg-sky-50 p-2 rounded-full text-sky-300"><FaWifi /></span>Internet</li>
@@ -97,15 +68,15 @@ const NavBar=()=>{
                                 <li className="flex items-center gap-2"><span className="bg-green-50 p-2 rounded-full text-green-300"><SiTransportforlondon /></span>Transport</li>
                             </ul>
                             <h1 className="text-neutral-500 text-[12px]">CREDIT</h1>
-                            <ul className="text-sm text-black flex flex-col gap-4 cursor-pointer">
-                                <li className="flex items-center gap-2"><span className="bg-sky-50 p-2 rounded-full text-sky-300"><RiDraftFill /></span>Overdrafts</li>
-                                <li className="flex items-center gap-2"><span className="bg-yellow-50 p-2 rounded-full text-yellow-300"><RiMoneyDollarBoxFill /></span>Salary Loan</li>
-                                <li className="flex items-center gap-2"><span className="bg-purple-50 p-2 rounded-full text-purple-300"><BsFillBagFill /></span>Loan</li>
+                            <ul className="text-sm text-black">
+                                <li>Overdrafts</li>
+                                <li>Salary Loan</li>
+                                <li>Loan</li>
                             </ul>
                         </div>
 
 
-                    </div>
+                    </div>}
         
 
 
@@ -118,7 +89,7 @@ const NavBar=()=>{
                 </ul>
 
 
-                <div className="flex items-center ml-auto gap-8 text-purple-900">
+                <div className="flex items-center ml-[16rem] gap-4 text-purple-900">
                     <button>Sign in</button> 
                     <button className="text-white px-6 py-2 bg-purple-950 rounded-[8px]">Join Kuda</button>
                     <p className="bg-green-100 p-3 rounded-full"><Image src={flag} width={0} height={0} alt="flag_logo" className="w-4   "/></p>

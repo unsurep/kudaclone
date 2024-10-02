@@ -67,7 +67,7 @@ const HomeSectionOne=()=>{
 
                     {/* right div */}
                     <div data-aos="flip-right"
-                        data-aos-duration="3000" className="ml-[23rem]  ">
+                        data-aos-duration="3000" className="ml-[20rem]  ">
                         <Image src={kuda1} width={0} height={0} alt="image" className="w-[20rem] "/>
                     </div>
 
