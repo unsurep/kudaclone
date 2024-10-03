@@ -8,21 +8,26 @@ AOS.init();
 
 import { FaApple } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
-
+import { FaCreditCard } from "react-icons/fa6";
+import { BiSolidPieChart } from "react-icons/bi";
+import { PiNetworkFill } from "react-icons/pi";
+import { BsSendCheckFill } from "react-icons/bs";
 import Link from "next/link"
 import Image from "next/image"
 import { useState, useEffect } from "react"
 import kuda1 from '../images/kuda1.png'
 import cbn from '../images/cbn.png'
 import ndic from '../images/ndic.png'
+import { FaPiggyBank } from "react-icons/fa6";
+import { IoIosArrowForward } from "react-icons/io";
 
 const HomeSectionOne=()=>{
 
     return(
         <>
-            <section className="mt-40">
+            <section className="my-36 px-[10rem]">
                 {/* div 1a */}
-               <div className="flex   px-[10rem]">
+               <div className="flex   ">
                     {/* left div */}
                     <div data-aos="fade-up"
                         data-aos-duration="3000" >
@@ -74,8 +79,60 @@ const HomeSectionOne=()=>{
                 </div>
 
                 {/* div 1b */}
-                <div>
-                    
+                <div className='mt-20'>
+                    <div>
+                        <div className='flex gap-5 justify-between'>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                                <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><FaCreditCard /></h1>
+                                <p className='mt-3 font-bold text-purple-900 text-sm'>Order a Kuda card on the app with pickup  and delivery options.</p>
+                            </div>
+
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                                <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><BiSolidPieChart /></h1>
+                                <p className='mt-3 font-bold text-purple-900 text-sm'>Enjoy cashless payment options online and  offline.</p>
+                            </div>
+
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                                <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><PiNetworkFill /></h1>
+                                <p className='mt-3 font-bold text-purple-900 text-sm'>Pay your essential bills and buy gift cards  easily.</p>
+                            </div>
+                        </div>
+
+
+                        <div className='mt-5  flex justify-center gap-5 '>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                                <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><BsSendCheckFill /></h1>
+                                <p className='mt-3 font-bold text-purple-900 text-sm'>Get 25 free transfers to Nigerian <br /> banks every month.</p>
+                            </div>
+
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                                <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><FaPiggyBank /></h1>
+                                <p className='mt-3 font-bold text-purple-900 text-sm'>Save money automatically any time <br /> you spend.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* div c */}
+                <div className='mt-48'>
+                    <div>
+                        <h1 className='text-purple-900 font-bold text-4xl leading-[3rem]'>Your phone + <br />
+                        our app + <br />
+                        a debit card= <br />
+                        a simpler life.</h1>
+
+                        <p className='mt-5'>We designed a money app for your lifestyle, and you <br /> can get a debit card to go with it. That's all you need <br /> to make the right money moves.</p>
+
+                        <div className='flex items-center cursor-pointer gap-3 font-bold mt-5 text-sm'>
+                            <h1><u className='text-purple-900'>Open An Account in Minutes</u></h1>
+                            <p><IoIosArrowForward /></p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        
+                    </div>
                 </div>
 
 
