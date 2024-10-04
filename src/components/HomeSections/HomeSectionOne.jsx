@@ -20,6 +20,23 @@ import cbn from '../images/cbn.png'
 import ndic from '../images/ndic.png'
 import { FaPiggyBank } from "react-icons/fa6";
 import { IoIosArrowForward } from "react-icons/io";
+import hand from '../images/hand.png'
+import cc from '../images/cc.png'
+import cw from '../images/cw.png'
+import kcard from '../images/kcard.png'
+import kw from '../images/kw.png'
+import bc from '../images/bc.png'
+import k1 from '../images/k1.png'
+import k2 from '../images/k2.png'
+import k3 from '../images/k3.png'
+import k4 from '../images/k4.png'
+import k5 from '../images/k5.png'
+import k6 from '../images/k6.png'
+import k7 from '../images/k7.png'
+import k8 from '../images/k8.png'
+import k9 from '../images/k9.png'
+import k10 from '../images/k10.png'
+
 
 const HomeSectionOne=()=>{
 
@@ -114,7 +131,7 @@ const HomeSectionOne=()=>{
                 </div>
 
                 {/* div c */}
-                <div className='mt-48'>
+                <div className='mt-48 flex items-center relative'>
                     <div>
                         <h1 className='text-purple-900 font-bold text-4xl leading-[3rem]'>Your phone + <br />
                         our app + <br />
@@ -130,8 +147,79 @@ const HomeSectionOne=()=>{
 
                     </div>
 
-                    <div>
+                    {/* for mobile screen only */}
+                    <div className=' '>
+                        <p className='absolute top-0 left-[37rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-48'/></p>
+                        <p className='absolute bottom-5 right-1 overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
+                        <p className='absolute   right-[1rem] bottom-[2.5rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p>
+                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-32 bottom-0 right-5 bounce-in-top'/></p>
+                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 bottom-0 right-[3rem] bounce-in-top blink-1 cursor-pointer'/></p>
                         
+                    </div>
+                </div>
+
+                {/* div d */}
+
+                <div className='mt-36 relative flex'>
+                    <div className=' '>
+                        {/* <p><Image src={bc} width={0} height={0} alt='image' className='w-80 absolute  top-0 left-[4rem]'/></p> */}
+
+                        <div className='flex gap-4'>
+                            {/* <div className='leading-[1rem]'>
+                                <p><Image src={k1} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k2} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k3} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k4} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k5} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k6} width={0} height={0} alt='image' className='w-80'/></p>
+                            </div> */}
+
+                            <div>
+                                <div>
+                                    <div>
+                                        <div className='flex items-center justify-between p-1 bg-white rounded-[3px] gap-1'>
+                                            <p>icon</p>
+                                            <div>
+                                                <p>Send to @username</p>
+                                                <p>icon</p>
+                                            </div>
+                                            <p>icon</p>
+                                        </div>
+                                    </div>
+
+
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+
+
+
+
+                            </div>
+
+                            {/* <div>
+                                <p><Image src={k1} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k2} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k3} width={0} height={0} alt='image' className='w-80'/></p>
+                                <p><Image src={k4} width={0} height={0} alt='image' className='w-80'/></p>
+                            </div> */}
+                        </div>
+                        
+                        
+
+                    </div>
+
+
+
+
+
+
+
+                    <div className='ml-auto'>
+                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
                     </div>
                 </div>
 
