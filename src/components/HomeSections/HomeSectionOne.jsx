@@ -19,7 +19,7 @@ import kuda1 from '../images/kuda1.png'
 import cbn from '../images/cbn.png'
 import ndic from '../images/ndic.png'
 import { FaPiggyBank } from "react-icons/fa6";
-
+import { IoIosSend } from "react-icons/io";
 import hand from '../images/hand.png'
 import cc from '../images/cc.png'
 import cw from '../images/cw.png'
@@ -177,53 +177,76 @@ const HomeSectionOne=()=>{
                             </div> */}
 
                             <div>
-                                <div className=''>
-                                    <div className='flex flex-col gap-2 absolute mt-[1.5rem]'>
-                                        <div className='flex items-center bg-white justify-between py-4 ring ring-green-300 px-8 rounded-[8px] '>
+                                <div className='flex'>
+                                    <div className='flex flex-col gap-3 absolute mt-[1.5rem]'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
-                                            <p className='ml-[3rem] text-neutral-600'><IoIosArrowForward /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
-                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
-                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
-                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
-                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
-                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
-
 
                                     </div>
 
 
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
+                                        
+
+                                        
+                                    <div className='flex flex-col gap-4 absolute mt-[4rem] ml-[16rem]'>
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                    </div>
                                 </div>
 
 
