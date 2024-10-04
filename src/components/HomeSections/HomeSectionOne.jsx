@@ -19,7 +19,7 @@ import kuda1 from '../images/kuda1.png'
 import cbn from '../images/cbn.png'
 import ndic from '../images/ndic.png'
 import { FaPiggyBank } from "react-icons/fa6";
-import { IoIosSend } from "react-icons/io";
+
 import hand from '../images/hand.png'
 import cc from '../images/cc.png'
 import cw from '../images/cw.png'
@@ -38,6 +38,13 @@ import k9 from '../images/k9.png'
 import k10 from '../images/k10.png'
 import kudalogo from '../images/kudalogo.png'
 import { IoIosArrowForward } from "react-icons/io";
+import { IoIosSend } from "react-icons/io";
+import { RiBillFill } from "react-icons/ri";
+import { GrAtm } from "react-icons/gr";
+import { IoGiftSharp } from "react-icons/io5";
+import { PiWebcam } from "react-icons/pi";
+import hc from '../images/hc.jpeg'
+
 
 
 const HomeSectionOne=()=>{
@@ -134,7 +141,7 @@ const HomeSectionOne=()=>{
 
                 {/* div c */}
                 <div className='mt-48 flex items-center relative'>
-                    <div>
+                    <div className="flex flex-col gap-5">
                         <h1 className='text-purple-900 font-bold text-4xl leading-[3rem]'>Your phone + <br />
                         our app + <br />
                         a debit card= <br />
@@ -142,7 +149,7 @@ const HomeSectionOne=()=>{
 
                         <p className='mt-5'>We designed a money app for your lifestyle, and you <br /> can get a debit card to go with it. That's all you need <br /> to make the right money moves.</p>
 
-                        <div className='flex items-center cursor-pointer gap-3 font-bold mt-5 text-sm'>
+                        <div className='flex items-center cursor-pointer gap-3 font-bold text-sm'>
                             <h1><u className='text-purple-900'>Open An Account in Minutes</u></h1>
                             <p><IoIosArrowForward /></p>
                         </div>
@@ -176,41 +183,41 @@ const HomeSectionOne=()=>{
                                 <p><Image src={k6} width={0} height={0} alt='image' className='w-80'/></p>
                             </div> */}
 
-                            <div>
+                            <div className="flex gap-12">
                                 <div className='flex'>
                                     <div className='flex flex-col gap-3 absolute mt-[1.5rem]'>
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-sky-500"><IoGiftSharp /></p>
                                             <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-green-500"><IoIosSend /></p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to Bank Account</p>
+                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
+                                            <p className="text-orange-500"><RiBillFill /></p>
                                             <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-green-500"><GrAtm /></p>
                                             <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-sky-500"><IoGiftSharp /></p>
                                             <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-red-500"><PiWebcam /></p>
                                             <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
@@ -223,59 +230,68 @@ const HomeSectionOne=()=>{
                                         
                                     <div className='flex flex-col gap-4 absolute mt-[4rem] ml-[16rem]'>
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-sky-500"><IoGiftSharp /></p>
                                             <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-red-500"><PiWebcam /></p>
                                             <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-green-500"><GrAtm /></p>
                                             <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className="text-green-500"><IoIosSend /></p>
                                             <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                     </div>
-                                </div>
-
-
-
-
+                                </div>  
                             </div>
-
-                            {/* <div>
-                                <p><Image src={k1} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k2} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k3} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k4} width={0} height={0} alt='image' className='w-80'/></p>
-                            </div> */}
                         </div>
-                        
-                        
-
                     </div>
 
 
+                    <div className='ml-auto mt-[8rem]'>
+                        <h1 className="text-4xl text-purple-900 font-bold">It is your money, we just <br /> help you manage it</h1>
 
-
-
-
-
-                    <div className='ml-auto'>
-                        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                        <p className=" text-sm mt-5">Save it, spend it, It is up you. Whatever you <br /> choose to do with your money, we will make sure it <br /> is done better and free of charg. We take responsibility <br /> for that.</p>
                     </div>
                 </div>
+
+
+
+                {/* div e */}
+
+                <div className="mt-60 flex ">
+
+                    <div className="flex flex-col gap-5">
+                        <h1 className="text-3xl text-purple-900 font-bold">Save money as you spend <br /> it, seriously.</h1>
+                        <p className="text-sm">You can not avoid spending. That is how you pay for your <br /> needs. But we can help you put money away every <br /> time you pay for something. Just set a percentage to <br /> save and watch your money grow.</p>
+
+                        <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
+                            <h1><u className='text-purple-900'>Open An Account in Minutes</u></h1>
+                            <p><IoIosArrowForward /></p>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div><Image src={hc} width/></div>
+                </div>
+
+
 
 
 
