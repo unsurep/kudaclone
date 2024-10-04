@@ -44,7 +44,7 @@ const HomeSectionOne=()=>{
 
     return(
         <>
-            <section className="my-36 px-[10rem]">
+            <section className="my-36 px-[10rem] relative">
                 {/* div 1a */}
                <div className="flex   ">
                     {/* left div */}
@@ -53,7 +53,7 @@ const HomeSectionOne=()=>{
                         <h1 className="text-purple-900 font-extrabold text-4xl">The money app for <br /> Africans.</h1>
                         <p className="my-5">Make free transfers, enjoy cashless payment <br /> options and earn interest on your savings with <br /> Kuda.</p>
 
-                        <div className="flex items-center gap-5">
+                        <div className="flex items-center gap-5 mt-[2rem]">
                             {/* apple store button */}
                             <button className="bg-black text-white px-3 py-1 rounded-[8px] flex items-center gap-1">
                                 <p className="text-2xl"><FaApple /></p>
@@ -164,7 +164,7 @@ const HomeSectionOne=()=>{
 
                 <div className='mt-40 relative flex'>
                     <div className=' '>
-                        {/* <p><Image src={bc} width={0} height={0} alt='image' className='w-80 absolute  top-0 left-[4rem]'/></p> */}
+                        <p><Image src={bc} width={0} height={0} alt='image' className='w-96 absolute  top-0 left-[4rem]'/></p>
 
                         <div className='flex gap-4'>
                             {/* <div className='leading-[1rem]'>
@@ -178,20 +178,38 @@ const HomeSectionOne=()=>{
 
                             <div>
                                 <div className=''>
-                                    <div className='flex flex-col gap-1'>
-                                        <div className='flex items-center justify-between py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                    <div className='flex flex-col gap-2 absolute mt-[1.5rem]'>
+                                        <div className='flex items-center bg-white justify-between py-4 ring ring-green-300 px-8 rounded-[8px] '>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
+                                            <p className='ml-[3rem] text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
                                             <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
                                             <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center justify-between py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
                                             <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
                                             <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
-                                        <div className='flex items-center justify-between py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
+                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
+                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex items-center bg-white justify-between ring ring-green-300 py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
                                             <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
                                             <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
                                             <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
