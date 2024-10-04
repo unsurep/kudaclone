@@ -19,7 +19,7 @@ import kuda1 from '../images/kuda1.png'
 import cbn from '../images/cbn.png'
 import ndic from '../images/ndic.png'
 import { FaPiggyBank } from "react-icons/fa6";
-import { IoIosArrowForward } from "react-icons/io";
+
 import hand from '../images/hand.png'
 import cc from '../images/cc.png'
 import cw from '../images/cw.png'
@@ -36,6 +36,8 @@ import k7 from '../images/k7.png'
 import k8 from '../images/k8.png'
 import k9 from '../images/k9.png'
 import k10 from '../images/k10.png'
+import kudalogo from '../images/kudalogo.png'
+import { IoIosArrowForward } from "react-icons/io";
 
 
 const HomeSectionOne=()=>{
@@ -160,7 +162,7 @@ const HomeSectionOne=()=>{
 
                 {/* div d */}
 
-                <div className='mt-36 relative flex'>
+                <div className='mt-40 relative flex'>
                     <div className=' '>
                         {/* <p><Image src={bc} width={0} height={0} alt='image' className='w-80 absolute  top-0 left-[4rem]'/></p> */}
 
@@ -175,16 +177,27 @@ const HomeSectionOne=()=>{
                             </div> */}
 
                             <div>
-                                <div>
-                                    <div>
-                                        <div className='flex items-center justify-between p-1 bg-white rounded-[3px] gap-1'>
-                                            <p>icon</p>
-                                            <div>
-                                                <p>Send to @username</p>
-                                                <p>icon</p>
-                                            </div>
-                                            <p>icon</p>
+                                <div className=''>
+                                    <div className='flex flex-col gap-1'>
+                                        <div className='flex items-center justify-between py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
+                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
+
+                                        <div className='flex items-center justify-between py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
+                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+                                        <div className='flex items-center justify-between py-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] px-8 rounded-[8px] gap-1'>
+                                            <p><Image src={kudalogo} width={0} height={0} alt='logo' className='w-4'/></p>
+                                            <p className='font-bold text-purple-900 text-[12px]'>Send to @username</p>
+                                            <p className='ml-[5rem] text-neutral-600'><IoIosArrowForward /></p>
+                                        </div>
+
+
                                     </div>
 
 
