@@ -271,10 +271,10 @@ const HomeSectionOne=()=>{
 
                 {/* div e */}
 
-                <div className="mt-60 flex ">
+                <div className="mt-60 flex items-center ">
 
-                    <div className="flex flex-col gap-5">
-                        <h1 className="text-3xl text-purple-900 font-bold">Save money as you spend <br /> it, seriously.</h1>
+                    <div className="flex flex-col gap-5 ">
+                        <h1 className="text-4xl text-purple-900 font-bold">Save money as you spend <br /> it, seriously.</h1>
                         <p className="text-sm">You can not avoid spending. That is how you pay for your <br /> needs. But we can help you put money away every <br /> time you pay for something. Just set a percentage to <br /> save and watch your money grow.</p>
 
                         <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
@@ -283,12 +283,7 @@ const HomeSectionOne=()=>{
                         </div>
                     </div>
 
-
-
-
-
-
-                    <div><Image src={hc} width/></div>
+                    <div className="ml-auto "><Image src={hc} width={0} height={0} alt="image" className="w-[25rem]"/></div>
                 </div>
 
 
