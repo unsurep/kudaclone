@@ -44,6 +44,14 @@ import { GrAtm } from "react-icons/gr";
 import { IoGiftSharp } from "react-icons/io5";
 import { PiWebcam } from "react-icons/pi";
 import hc from '../images/hc.jpeg'
+import circle from '../images/bigpinkc.png'
+import bkc from '../images/bkc.png'
+import blockc from '../images/blockc.png'
+import stop from '../images/stop.png'
+import hello from '../images/hello.png'
+import svg1 from '../images/svg1.svg'
+import ccoin from '../images/ccoin.png'
+
 
 
 
@@ -271,7 +279,7 @@ const HomeSectionOne=()=>{
 
                 {/* div e */}
 
-                <div className="mt-60 flex items-center ">
+                <div className="mt-40 flex items-center ">
 
                     <div className="flex flex-col gap-5 ">
                         <h1 className="text-4xl text-purple-900 font-bold">Save money as you spend <br /> it, seriously.</h1>
@@ -285,6 +293,71 @@ const HomeSectionOne=()=>{
 
                     <div className="ml-auto "><Image src={hc} width={0} height={0} alt="image" className="w-[25rem]"/></div>
                 </div>
+
+                {/* div f */}
+                <div className="mt-40 flex items-center ">
+
+                    <div className="relative roll-in-left cursor-pointer">
+                        <p><Image src={circle} width={0} height={0} alt="image" className="w-96"/></p>
+                        <p className="absolute top-[6.5rem] left-[5rem] vibrate-1"><Image src={bkc} width={0} height={0} alt="image" className="w-56"/></p>
+                        <p className="absolute top-[3rem] left-0"><Image src={blockc} width={0} height={0} alt="image" className=""/></p>
+                        <input type="checkbox" className="toggle toggle-error absolute top-[4.5rem] right-[4rem] " defaultChecked />
+                        <p className="blink-1"><Image src={stop} width={0} height={0} alt="image" className="absolute bottom-0 right-[4rem] w-20"/></p>
+                    </div>
+
+
+                    <div className="flex flex-col gap-5 ml-auto ">
+                        <h1 className="text-4xl text-purple-900 font-bold">Turn off access, turn on <br /> safety.</h1>
+                        <p className="text-sm">Life happens. Milk spills. Debit cards go missing. <br /> If that ever happens, you can block your missing card <br /> on the app so no one can use it. We had like to see them try.</p>
+
+                        <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
+                            <h1><u className='text-purple-900'>Open An Account in Minutes</u></h1>
+                            <p><IoIosArrowForward /></p>
+                        </div>
+
+                    </div>
+                </div>
+
+                {/* div g */}
+                <div className="mt-40 flex items-center relative ">
+
+                    <div className="flex flex-col gap-5  ">
+                        <h1 className="text-4xl text-purple-900 font-bold">We are always happy to <br /> help you.</h1>
+                        <p className="text-sm">You can chat with us on the app, slide into our DMs, <br /> tweet, leave an Instagram comment, send an email <br /> or call. However you choose to reach out, there will always <br /> be a friendly person there to make your life easy.</p>
+
+                        <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
+                            <h1><u className='text-purple-900'>Get Help</u></h1>
+                            <p><IoIosArrowForward /></p>
+                        </div>
+
+                    </div>
+
+                    
+                    <div className="ml-auto   ">
+                        <Image src={svg1} width={0} height={0} alt="image" className="w-[33rem] roll-in-left"/>
+                        <p className=""><Image src={hello} width={0} height={0} alt="image" className="absolute top-0 right-0 w-60 blink-1 bounce-in-top cursor-pointer"/></p>
+                    </div>
+                </div>
+
+                {/* div h */}
+                <div className="mt-40 flex items-center">
+
+                    <div className="  ">
+                        <Image src={ccoin} width={0} height={0} alt="image" className=""/>
+                    </div>
+
+                    <div className="flex flex-col gap-5 ml-auto ">
+                        <h1 className="text-4xl text-purple-900 font-bold">Fees as clear as glass.</h1>
+                        <p className="text-sm">We are serious about free banking, and we will never,<br /> ever charge you for anything without your consent.</p>
+
+                        <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
+                            <h1><u className='text-purple-900'>See all our fees</u></h1>
+                            <p><IoIosArrowForward /></p>
+                        </div>
+
+                    </div>
+                </div>
+
 
 
 

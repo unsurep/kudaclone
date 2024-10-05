@@ -307,7 +307,7 @@ body {
 
 
       /* div e */
-      .roll-in-left:hover {
+      .roll-in-left {
 	-webkit-animation: roll-in-left 0.6s ease-out both;
 	        animation: roll-in-left 0.6s ease-out both;
 }

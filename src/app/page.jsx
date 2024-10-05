@@ -1,6 +1,7 @@
 
 
 import HomeSectionOne from "@/components/HomeSections/HomeSectionOne";
+import HomeSectionTwo from "@/components/HomeSections/HomeSectionTwo";
 import Link from "next/link";
 
 const Home=()=>{
@@ -9,6 +10,7 @@ const Home=()=>{
         <>
             <div>
                 <HomeSectionOne/>
+                <HomeSectionTwo/>
 
             </div>
         </>
