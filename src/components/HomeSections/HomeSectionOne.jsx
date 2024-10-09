@@ -168,21 +168,14 @@ const HomeSectionOne=()=>{
                         <p><Image src={bc} width={0} height={0} alt='image' className='w-96 absolute  top-0 left-[4rem]'/></p>
 
                         <div className='flex gap-4'>
-                            {/* <div className='leading-[1rem]'>
-                                <p><Image src={k1} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k2} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k3} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k4} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k5} width={0} height={0} alt='image' className='w-80'/></p>
-                                <p><Image src={k6} width={0} height={0} alt='image' className='w-80'/></p>
-                            </div> */}
+                           
 
                             <div className="flex gap-12">
                                 <div className='flex'>
                                     <div className='flex flex-col gap-3 absolute mt-[1.5rem]'>
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-sky-500"><IoGiftSharp /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
@@ -194,25 +187,25 @@ const HomeSectionOne=()=>{
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-orange-500"><RiBillFill /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-green-500"><GrAtm /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-sky-500"><IoGiftSharp /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-red-500"><PiWebcam /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to @username</p>
+                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
@@ -225,25 +218,25 @@ const HomeSectionOne=()=>{
                                     <div className='flex flex-col gap-4 absolute mt-[4rem] ml-[16rem]'>
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-sky-500"><IoGiftSharp /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-red-500"><PiWebcam /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-green-500"><GrAtm /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
                                         <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
                                             <p className="text-green-500"><IoIosSend /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to @username</p>
+                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
                                             <p className=' text-neutral-600'><IoIosArrowForward /></p>
                                         </div>
 
