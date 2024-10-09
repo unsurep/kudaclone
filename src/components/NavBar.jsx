@@ -70,7 +70,7 @@ const NavBar=()=>{
                     <li onClick={togglePersonal} className="flex items-center gap-2 cursor-pointer">Personal <MdArrowDropDown /></li>
 
                     {/* toggle personal */}
-                    {personal===true && <div className="absolute top-[4rem]  flex bg-white h-screen">
+                    {personal===true && <div className="absolute top-[4rem]  flex bg-white h-screen ">
                         <div className="bg-red-100 h-screen px-6 py-3 rounded-[5px]">
                             <ul className="text-sm text-black flex flex-col gap-4 cursor-pointer">
                                 <li className="flex items-center gap-2"> <span className="bg-neutral-50 p-2 rounded-full"><RiHome4Fill /></span>Discover Personal</li>
