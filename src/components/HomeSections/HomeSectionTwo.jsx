@@ -34,8 +34,6 @@ import { TbWorld } from "react-icons/tb";
 import { RiTwitterXFill } from "react-icons/ri";
 import { LuInstagram } from "react-icons/lu";
 import { FaYoutube } from "react-icons/fa";
-import Link from "next/link"
-import react from "react"
 import Image from "next/image"
 import { FaApple } from "react-icons/fa";
 import { RiFacebookFill } from "react-icons/ri";

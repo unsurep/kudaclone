@@ -12,31 +12,17 @@ import { FaCreditCard } from "react-icons/fa6";
 import { BiSolidPieChart } from "react-icons/bi";
 import { PiNetworkFill } from "react-icons/pi";
 import { BsSendCheckFill } from "react-icons/bs";
-import Link from "next/link"
 import Image from "next/image"
-import { useState, useEffect } from "react"
 import kuda1 from '../images/kuda1.png'
 import cbn from '../images/cbn.png'
 import ndic from '../images/ndic.png'
 import { FaPiggyBank } from "react-icons/fa6";
-
 import hand from '../images/hand.png'
 import cc from '../images/cc.png'
 import cw from '../images/cw.png'
 import kcard from '../images/kcard.png'
 import kw from '../images/kw.png'
 import bc from '../images/bc.png'
-import k1 from '../images/k1.png'
-import k2 from '../images/k2.png'
-import k3 from '../images/k3.png'
-import k4 from '../images/k4.png'
-import k5 from '../images/k5.png'
-import k6 from '../images/k6.png'
-import k7 from '../images/k7.png'
-import k8 from '../images/k8.png'
-import k9 from '../images/k9.png'
-import k10 from '../images/k10.png'
-import kudalogo from '../images/kudalogo.png'
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosSend } from "react-icons/io";
 import { RiBillFill } from "react-icons/ri";
