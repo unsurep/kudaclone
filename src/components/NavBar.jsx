@@ -22,6 +22,9 @@ import { SiTransportforlondon } from "react-icons/si";
 import { VscIssueDraft } from "react-icons/vsc";
 import { MdMoney } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
+import { IoMdMenu } from "react-icons/io";
+import { IoMdClose } from "react-icons/io";
+
 
 const NavBar=()=>{
 
@@ -59,8 +62,8 @@ const NavBar=()=>{
     }
 
     return(
-        <>
-            <nav className="flex items-center px-[5rem] py-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] relative">
+        <div>
+            <nav className="hidden lg:flex items-center px-[5rem]  py-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] relative">
                 <div>
                     <Image src={logo} width={0} height={0} alt="logo" className=""/>
                 </div>
@@ -169,10 +172,62 @@ const NavBar=()=>{
                     <button className="text-white px-6 py-2 bg-purple-950 rounded-[8px]">Join Kuda</button>
                     <p className="bg-green-100 p-3 rounded-full"><Image src={flag} width={0} height={0} alt="flag_logo" className="w-4   "/></p>
                 </div>
-
-
             </nav>
-        </>
+
+            {/* responsive for mobile & tablet */}
+            <nav className=" flex p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+                <div><Image src={logo} width={0} height={0} alt="logo" className=""/></div>
+
+                <div className="flex ml-auto items-center gap-8">
+                    <p className="bg-green-100 p-2 rounded-full"><Image src={flag} width={0} height={0} alt="image_flag" className="w-4"/></p>
+
+                    <div className="flex items-center">
+                        <p className="text-2xl"><IoMdMenu /></p>
+                        <p className="text-2xl"><IoMdClose /></p>
+                    </div>
+                </div>
+            </nav>
+
+            <div className="px-[1rem] mt-2">
+
+                <div className=" flex gap-8">
+                    <button className="text-white px-6 py-2 bg-purple-950 rounded-[8px]">Join Kuda</button>
+                    <button className="text-black px-6 py-2 bg-slate-200 rounded-[8px]">Sign In</button>
+                </div>
+
+                <div className="my-8 leading-[20px]">
+                    <p>Personal</p>
+                    <hr />
+
+                    <p>Business</p>
+                    <hr />
+
+                    <p>Company</p>
+                    <hr />
+
+                    <p>Developers</p>
+                    <hr />
+
+                    <p>Contact Us</p>
+                    <hr />
+
+                    <p>Help</p>
+
+
+
+
+
+                        
+                </div>
+
+
+            </div>
+
+
+
+
+
+        </div>
     )
 
 

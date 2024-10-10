@@ -9,8 +9,8 @@ const Home=()=>{
     return ( 
         <>
             <div>
-                <HomeSectionOne/>
-                <HomeSectionTwo/>
+                {/* <HomeSectionOne/> */}
+                {/* <HomeSectionTwo/> */}
 
             </div>
         </>
