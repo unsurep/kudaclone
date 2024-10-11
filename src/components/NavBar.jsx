@@ -24,6 +24,7 @@ import { MdMoney } from "react-icons/md";
 import { FaShoppingBag } from "react-icons/fa";
 import { IoMdMenu } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
+import { IoCaretForwardSharp } from "react-icons/io5";
 
 
 const NavBar=()=>{
@@ -32,6 +33,11 @@ const NavBar=()=>{
     const [business, setBusiness]=useState(false);
     const [company, setCompany]=useState(false);
     const [helpp, setHelpp]=useState(false);
+    const [togglep, setTogglep]=useState(false);
+
+    const handleToggle=()=>{
+        setTogglep(!togglep)
+    }
 
     const togglePersonal=()=>{
         setPersonal(!personal)
@@ -175,58 +181,76 @@ const NavBar=()=>{
             </nav>
 
             {/* responsive for mobile & tablet */}
-            <nav className=" flex p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)]">
+            <nav className=" flex p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:hidden relative">
                 <div><Image src={logo} width={0} height={0} alt="logo" className=""/></div>
 
                 <div className="flex ml-auto items-center gap-8">
                     <p className="bg-green-100 p-2 rounded-full"><Image src={flag} width={0} height={0} alt="image_flag" className="w-4"/></p>
 
-                    <div className="flex items-center">
-                        <p className="text-2xl"><IoMdMenu /></p>
-                        <p className="text-2xl"><IoMdClose /></p>
+                    <div onClick={handleToggle} className="flex items-center">
+                        
+                        {togglep===true ? <div className="text-2xl"><IoMdClose/>
+                        { <div className=" absolute left-3 top-[5rem]">
+                            
+
+                        <div className=" flex gap-16">
+                            <button className="text-white px-6 py-2 bg-purple-950 rounded-[8px] text-sm">Join Kuda</button>
+                            <button className="text-black px-6 py-2 bg-slate-200 rounded-[8px] text-sm ">Sign In</button>
+                        </div>
+
+                        <div className="my-6 leading-[20px] font-bold text-purple-900 text-sm">
+                            <p className="mb-6 flex items-center ">Personal <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
+                            <hr />
+
+                            <p className="my-6 flex items-center">Business <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
+                            <hr />
+
+                            <p className="my-6 flex items-center">Company <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
+                            <hr />
+
+                            <p className="my-6 flex items-center">Developers <span className="ml-[11rem]"><IoCaretForwardSharp /></span></p>
+                            <hr />
+
+                            <p className="my-6 flex items-center">Contact Us <span className="ml-[11rem]"><IoCaretForwardSharp /></span></p>
+                            <hr />
+
+                            <p className="my-6 flex items-center">Help <span className="ml-[14rem]"><IoCaretForwardSharp /></span></p>    
+                        </div>
+                        </div> } </div> : <div className="text-2xl"><IoMdMenu /></div>     }
+                                              
                     </div>
                 </div>
             </nav>
 
-            <div className="px-[1rem] mt-2">
+            {/* <div className="px-[1rem] mt-2">
+                            
 
                 <div className=" flex gap-8">
                     <button className="text-white px-6 py-2 bg-purple-950 rounded-[8px]">Join Kuda</button>
                     <button className="text-black px-6 py-2 bg-slate-200 rounded-[8px]">Sign In</button>
                 </div>
 
-                <div className="my-8 leading-[20px]">
-                    <p>Personal</p>
+                <div className="my-6 leading-[20px] font-bold text-purple-900 text-sm">
+                    <p className="mb-6 flex items-center ">Personal <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
                     <hr />
 
-                    <p>Business</p>
+                    <p className="my-6 flex items-center">Business <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
                     <hr />
 
-                    <p>Company</p>
+                    <p className="my-6 flex items-center">Company <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
                     <hr />
 
-                    <p>Developers</p>
+                    <p className="my-6 flex items-center">Developers <span className="ml-[11rem]"><IoCaretForwardSharp /></span></p>
                     <hr />
 
-                    <p>Contact Us</p>
+                    <p className="my-6 flex items-center">Contact Us <span className="ml-[11rem]"><IoCaretForwardSharp /></span></p>
                     <hr />
 
-                    <p>Help</p>
-
-
-
-
-
-                        
+                    <p className="my-6 flex items-center">Help <span className="ml-[14rem]"><IoCaretForwardSharp /></span></p>    
                 </div>
+            </div> */}
 
-
-            </div>
-
-
-
-
-
+            
         </div>
     )
 
