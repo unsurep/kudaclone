@@ -136,7 +136,7 @@ const HomeSectionOne=()=>{
                 </div>
 
                 {/* div c */}
-                <div className='mt-32 md:flex items-center relative'>
+                <div className='mt-32 pb-[5rem] flex    gap-10 relative'>
                     <div className="flex flex-col gap-5">
                         <h1 className='text-purple-900 font-bold text-4xl leading-[3rem]'>Your phone + <br />
                         our app + <br />
@@ -162,7 +162,15 @@ const HomeSectionOne=()=>{
                         
                     </div>
 
-                    {/* responsive for  */}
+                    {/* responsive for phone screen  */}
+                    <div className=' md:hidden flex flex-col'>
+                        {/* <p className='absolute :top-0 left-[0rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-48'/></p> */}
+                        <p className='absolute bottom-0 right-0 overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
+                        {/* <p className='absolute   right-[0rem] bottom-[0rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p> */}
+                        {/* <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-32 bottom-0 right-0 bounce-in-top'/></p> */}
+                        {/* <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 bottom-0 right-[0rem] bounce-in-top blink-1 cursor-pointer'/></p> */}
+                        
+                    </div>
                 </div>
 
                 {/* div d */}
