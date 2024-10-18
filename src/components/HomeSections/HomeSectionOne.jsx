@@ -45,43 +45,45 @@ const HomeSectionOne=()=>{
 
     return(
         <>
-            <section className="my-36 px-[10rem] relative">
+            <section className="mt-16 lg:my-36  px-[1rem] md:px-[3rem] lg:px-[5rem] relative">
                 {/* div 1a */}
-               <div className="flex   ">
+               <div className="md:flex   ">
                     {/* left div */}
-                    <div data-aos="fade-up"
+                    <div data-aos="fade-up  "
                         data-aos-duration="3000" >
-                        <h1 className="text-purple-900 font-extrabold text-4xl">The money app for <br /> Africans.</h1>
-                        <p className="my-5">Make free transfers, enjoy cashless payment <br /> options and earn interest on your savings with <br /> Kuda.</p>
+                        <h1 className="text-purple-900 font-extrabold  text-2xl lg:text-4xl">The money app for <br /> Africans.</h1>
+                        <p className="my-5 text-sm">Make free transfers, enjoy cashless payment <br /> options and earn interest on your savings with <br /> Kuda.</p>
 
                         <div className="flex items-center gap-5 mt-[2rem]">
                             {/* apple store button */}
-                            <button className="bg-black text-white px-3 py-1 rounded-[8px] flex items-center gap-1">
-                                <p className="text-2xl"><FaApple /></p>
-                                <div>
-                                    <p className="text-[10px]">Download on the</p>
-                                    <p className="text-[14px]">App Store</p>
+                            <button className="bg-black text-white px-3 py-1 rounded-[8px] flex items-center gap-3 w-fit">
+                                
+                                <div className='flex gap-2 justify-center items-center'>
+                                    <p className="text-2xl"><FaApple /></p>
+                                    {/* <p className="text-[10px]">Download on the</p> */}
+                                    <p className=" text-[10px]">App Store</p>
                                 </div>
-                            </button>
+                            </button> 
 
                             {/* google store button */}
-                            <button className="bg-black text-white px-3 py-1 rounded-[8px] flex items-center gap-1">
-                                <p className="text-2xl"><FcGoogle /></p>
-                                <div>
-                                    <p className="text-[10px]">GET IT ON</p>
-                                    <p className="text-[14px]">Google Play</p>
+                            <button className="bg-black text-white px-3  py-1 rounded-[8px] flex  gap-3 w-fit">
+                                
+                                <div className='flex gap-2 justify-center items-center'>
+                                    <p className=" text-2xl"><FcGoogle /></p>
+                                    {/* <h1 className="md:text-[6px] lg:text-[10px]">GET IT ON</h1> */}
+                                    <p className="text-[10px]">Google Play</p>
                                 </div>
                             </button>
                         </div>
 
                         <div className="mt-5 flex items-center gap-4">
                             <div className="flex items-center justify-center gap-1">
-                                <p className="text-[12px] text-neutral-500">Fully Licensed by the CBN</p>
+                                <p className="text-[10px] lg:text-[12px] text-neutral-500">Fully Licensed by the CBN</p>
                                 <p><Image src={cbn} width={0} height={0} alt="logo" className="w-3"/></p>
                             </div>
 
                             <div className="flex items-center justify-center gap-1">
-                                <p className="text-[12px] text-neutral-500">Deposits Insured by</p>
+                                <p className="text-[10px] lg:text-[12px] text-neutral-500">Deposits Insured by</p>
                                 <p><Image src={ndic} width={0} height={0} alt="logo" className="w-10"/></p>
                             </div>
                         </div>
@@ -93,39 +95,39 @@ const HomeSectionOne=()=>{
 
                     {/* right div */}
                     <div data-aos="flip-right"
-                        data-aos-duration="3000" className="ml-[20rem]  ">
-                        <Image src={kuda1} width={0} height={0} alt="image" className="w-[20rem] "/>
+                        data-aos-duration="3000" className="md:ml-[20rem] mt-12 ml-[3rem] ">
+                        <Image src={kuda1} width={0} height={0} alt="image" className="md:w-[20rem] w-[10rem] "/>
                     </div>
                 </div>
 
                 {/* div 1b */}
                 <div className='mt-20'>
                     <div>
-                        <div className='flex gap-5 justify-between'>
-                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                        <div className='lg:flex gap-5 justify-between grid grid-col-1'>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:w-[70vw] lg:full rounded-[8px] '>
                                 <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><FaCreditCard /></h1>
-                                <p className='mt-3 font-bold text-purple-900 text-sm'>Order a Kuda card on the app with pickup  and delivery options.</p>
+                                <p className='mt-3 font-bold text-purple-900 text-sm lg:w-full'>Order a Kuda card on the app with pickup  and delivery options.</p>
                             </div>
 
-                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:w-fill rounded-[8px]'>
                                 <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><BiSolidPieChart /></h1>
-                                <p className='mt-3 font-bold text-purple-900 text-sm'>Enjoy cashless payment options online and  offline.</p>
+                                <p className='mt-3 font-bold text-purple-900 text-sm '>Enjoy cashless payment options online and  offline.</p>
                             </div>
 
-                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:w-fill rounded-[8px]'>
                                 <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><PiNetworkFill /></h1>
                                 <p className='mt-3 font-bold text-purple-900 text-sm'>Pay your essential bills and buy gift cards  easily.</p>
                             </div>
                         </div>
 
 
-                        <div className='mt-5  flex justify-center gap-5 '>
-                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                        <div className='mt-5  lg:flex lg:justify-between gap-5 grid grid-col-1 '>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] md:w-[70vw] lg:w-[100vw] rounded-[8px]'>
                                 <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><BsSendCheckFill /></h1>
                                 <p className='mt-3 font-bold text-purple-900 text-sm'>Get 25 free transfers to Nigerian <br /> banks every month.</p>
                             </div>
 
-                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)] w-fit rounded-[8px]'>
+                            <div className='bg-white px-8 py-5 shadow-[0_8px_30px_rgb(0,0,0,0.12)]  md:w-[70vw] lg:w-fill rounded-[8px]'>
                                 <h1 className='bg-zinc-200 p-2 rounded-full w-fit'><FaPiggyBank /></h1>
                                 <p className='mt-3 font-bold text-purple-900 text-sm'>Save money automatically any time <br /> you spend.</p>
                             </div>
@@ -134,7 +136,7 @@ const HomeSectionOne=()=>{
                 </div>
 
                 {/* div c */}
-                <div className='mt-48 flex items-center relative'>
+                <div className='mt-32 md:flex items-center relative'>
                     <div className="flex flex-col gap-5">
                         <h1 className='text-purple-900 font-bold text-4xl leading-[3rem]'>Your phone + <br />
                         our app + <br />
@@ -150,20 +152,22 @@ const HomeSectionOne=()=>{
 
                     </div>
 
-                    {/* for mobile screen only */}
-                    <div className=' '>
-                        <p className='absolute top-0 left-[37rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-48'/></p>
-                        <p className='absolute bottom-5 right-1 overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
-                        <p className='absolute   right-[1rem] bottom-[2.5rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p>
-                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-32 bottom-0 right-5 bounce-in-top'/></p>
-                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 bottom-0 right-[3rem] bounce-in-top blink-1 cursor-pointer'/></p>
+                    {/* for big screen lg screen only */}
+                    <div className=' hidden md:flex flex-col'>
+                        <p className='absolute lg:top-0 lg:left-[30rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-48'/></p>
+                        <p className='absolute lg:bottom-5 lg:right-1 overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
+                        <p className='absolute   lg:right-[1rem] lg:bottom-[2.5rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p>
+                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-32 lg:bottom-0 lg:right-5 bounce-in-top'/></p>
+                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 lg:bottom-0 lg:right-[3rem] bounce-in-top blink-1 cursor-pointer'/></p>
                         
                     </div>
+
+                    {/* responsive for  */}
                 </div>
 
                 {/* div d */}
 
-                <div className='mt-40 relative flex'>
+                {/* <div className='mt-40 relative flex'>
                     <div className=' '>
                         <p><Image src={bc} width={0} height={0} alt='image' className='w-96 absolute  top-0 left-[4rem]'/></p>
 
@@ -252,13 +256,13 @@ const HomeSectionOne=()=>{
 
                         <p className=" text-sm mt-5">Save it, spend it, It is up you. Whatever you <br /> choose to do with your money, we will make sure it <br /> is done better and free of charg. We take responsibility <br /> for that.</p>
                     </div>
-                </div>
+                </div> */}
 
 
 
                 {/* div e */}
 
-                <div className="mt-40 flex items-center ">
+                {/* <div className="mt-40 flex items-center ">
 
                     <div className="flex flex-col gap-5 ">
                         <h1 className="text-4xl text-purple-900 font-bold">Save money as you spend <br /> it, seriously.</h1>
@@ -271,10 +275,10 @@ const HomeSectionOne=()=>{
                     </div>
 
                     <div className="ml-auto "><Image src={hc} width={0} height={0} alt="image" className="w-[25rem]"/></div>
-                </div>
+                </div> */}
 
                 {/* div f */}
-                <div className="mt-40 flex items-center ">
+                {/* <div className="mt-40 flex items-center ">
 
                     <div className="relative roll-in-left cursor-pointer">
                         <p><Image src={circle} width={0} height={0} alt="image" className="w-96"/></p>
@@ -295,10 +299,10 @@ const HomeSectionOne=()=>{
                         </div>
 
                     </div>
-                </div>
+                </div> */}
 
                 {/* div g */}
-                <div className="mt-40 flex items-center relative ">
+                {/* <div className="mt-40 flex items-center relative ">
 
                     <div className="flex flex-col gap-5  ">
                         <h1 className="text-4xl text-purple-900 font-bold">We are always happy to <br /> help you.</h1>
@@ -316,10 +320,10 @@ const HomeSectionOne=()=>{
                         <Image src={svg1} width={0} height={0} alt="image" className="w-[33rem] roll-in-left"/>
                         <p className=""><Image src={hello} width={0} height={0} alt="image" className="absolute top-0 right-0 w-60 blink-1 bounce-in-top cursor-pointer"/></p>
                     </div>
-                </div>
+                </div> */}
 
                 {/* div h */}
-                <div className="mt-40 flex items-center">
+                {/* <div className="mt-40 flex items-center">
 
                     <div className="  ">
                         <Image src={ccoin} width={0} height={0} alt="image" className=""/>
@@ -335,7 +339,7 @@ const HomeSectionOne=()=>{
                         </div>
 
                     </div>
-                </div>
+                </div> */}
 
 
 

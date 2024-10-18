@@ -68,14 +68,14 @@ const NavBar=()=>{
     }
 
     return(
-        <div>
-            <nav className="hidden lg:flex items-center px-[5rem]  py-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] relative">
+        <div className="">
+            <nav className="hidden lg:flex lg:justify-between items-center md:px-[3rem]  py-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] relative bg-white">
                 <div>
                     <Image src={logo} width={0} height={0} alt="logo" className=""/>
                 </div>
 
 
-                <ul className="flex items-center gap-8 ml-[10rem] text-purple-900">
+                <ul className="flex items-center gap-8  text-purple-900">
                     <li onClick={togglePersonal} className="flex items-center gap-2 cursor-pointer">Personal <MdArrowDropDown /></li>
 
                     {/* toggle personal */}
@@ -173,7 +173,7 @@ const NavBar=()=>{
                 </ul>
 
 
-                <div className="flex items-center ml-[16rem] gap-4 text-purple-900">
+                <div className="flex items-center  gap-4 text-purple-900">
                     <button>Sign in</button> 
                     <button className="text-white px-6 py-2 bg-purple-950 rounded-[8px]">Join Kuda</button>
                     <p className="bg-green-100 p-3 rounded-full"><Image src={flag} width={0} height={0} alt="flag_logo" className="w-4   "/></p>
@@ -181,13 +181,13 @@ const NavBar=()=>{
             </nav>
 
             {/* responsive for mobile & tablet */}
-            <nav className=" flex p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] md:hidden relative">
+            <nav className=" flex p-[1rem] shadow-[0_3px_10px_rgb(0,0,0,0.2)] lg:hidden relative">
                 <div><Image src={logo} width={0} height={0} alt="logo" className=""/></div>
 
                 <div className="flex ml-auto items-center gap-8">
                     <p className="bg-green-100 p-2 rounded-full"><Image src={flag} width={0} height={0} alt="image_flag" className="w-4"/></p>
 
-                    <div onClick={handleToggle} className="flex items-center">
+                    <div onClick={handleToggle} className="flex items-center z-50 ">
                         
                         {togglep===true ? <div className="text-2xl"><IoMdClose/>
                         { <div className=" absolute left-3 top-[5rem]">
@@ -198,23 +198,23 @@ const NavBar=()=>{
                             <button className="text-black px-6 py-2 bg-slate-200 rounded-[8px] text-sm ">Sign In</button>
                         </div>
 
-                        <div className="my-6 leading-[20px] font-bold text-purple-900 text-sm">
-                            <p className="mb-6 flex items-center ">Personal <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
+                        <div className="mt-4 leading-[20px] font-bold text-purple-900 text-sm bg-white h-screen ">
+                            <p className="mb-6 flex items-center ">Personal <span className="ml-[13rem]"><IoCaretForwardSharp /></span></p>
                             <hr />
 
-                            <p className="my-6 flex items-center">Business <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
+                            <p className="my-6 flex items-center">Business <span className="ml-[13rem]"><IoCaretForwardSharp /></span></p>
                             <hr />
 
-                            <p className="my-6 flex items-center">Company <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
+                            <p className="my-6 flex items-center">Company <span className="ml-[13rem]"><IoCaretForwardSharp /></span></p>
                             <hr />
 
-                            <p className="my-6 flex items-center">Developers <span className="ml-[11rem]"><IoCaretForwardSharp /></span></p>
+                            <p className="my-6 flex items-center">Developers <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
                             <hr />
 
-                            <p className="my-6 flex items-center">Contact Us <span className="ml-[11rem]"><IoCaretForwardSharp /></span></p>
+                            <p className="my-6 flex items-center">Contact Us <span className="ml-[12rem]"><IoCaretForwardSharp /></span></p>
                             <hr />
 
-                            <p className="my-6 flex items-center">Help <span className="ml-[14rem]"><IoCaretForwardSharp /></span></p>    
+                            <p className="my-6 flex items-center">Help <span className="ml-[15rem]"><IoCaretForwardSharp /></span></p>    
                         </div>
                         </div> } </div> : <div className="text-2xl"><IoMdMenu /></div>     }
                                               

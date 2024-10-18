@@ -9,7 +9,7 @@ const Home=()=>{
     return ( 
         <>
             <div>
-                {/* <HomeSectionOne/> */}
+                <HomeSectionOne/>
                 {/* <HomeSectionTwo/> */}
 
             </div>
