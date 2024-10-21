@@ -22,21 +22,12 @@ import cc from '../images/cc.png'
 import cw from '../images/cw.png'
 import kcard from '../images/kcard.png'
 import kw from '../images/kw.png'
-import bc from '../images/bc.png'
 import { IoIosArrowForward } from "react-icons/io";
-import { IoIosSend } from "react-icons/io";
-import { RiBillFill } from "react-icons/ri";
-import { GrAtm } from "react-icons/gr";
-import { IoGiftSharp } from "react-icons/io5";
-import { PiWebcam } from "react-icons/pi";
-import hc from '../images/hc.jpeg'
-import circle from '../images/bigpinkc.png'
-import bkc from '../images/bkc.png'
-import blockc from '../images/blockc.png'
-import stop from '../images/stop.png'
-import hello from '../images/hello.png'
-import svg1 from '../images/svg1.svg'
 import ccoin from '../images/ccoin.png'
+import pk from '../images/pk.png'
+import bcard from '../images/bcard.png'
+import pcard from '../images/pcard.png'
+import ccard from '../images/ccare.png'
 
 
 
@@ -60,7 +51,6 @@ const HomeSectionOne=()=>{
                                 
                                 <div className='flex gap-2 justify-center items-center'>
                                     <p className="text-2xl"><FaApple /></p>
-                                    {/* <p className="text-[10px]">Download on the</p> */}
                                     <p className=" text-[10px]">App Store</p>
                                 </div>
                             </button> 
@@ -70,7 +60,6 @@ const HomeSectionOne=()=>{
                                 
                                 <div className='flex gap-2 justify-center items-center'>
                                     <p className=" text-2xl"><FcGoogle /></p>
-                                    {/* <h1 className="md:text-[6px] lg:text-[10px]">GET IT ON</h1> */}
                                     <p className="text-[10px]">Google Play</p>
                                 </div>
                             </button>
@@ -136,7 +125,7 @@ const HomeSectionOne=()=>{
                 </div>
 
                 {/* div c */}
-                <div className='mt-32 pb-[5rem] flex    gap-10 relative'>
+                <div className='mt-32 pb-[25rem] md:pb-[2rem]  flex    gap-10 relative'>
                     <div className="flex flex-col gap-5">
                         <h1 className='text-purple-900 font-bold text-4xl leading-[3rem]'>Your phone + <br />
                         our app + <br />
@@ -153,124 +142,58 @@ const HomeSectionOne=()=>{
                     </div>
 
                     {/* for big screen lg screen only */}
-                    <div className=' hidden md:flex flex-col'>
-                        <p className='absolute lg:top-0 lg:left-[30rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-48'/></p>
-                        <p className='absolute lg:bottom-5 lg:right-1 overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
-                        <p className='absolute   lg:right-[1rem] lg:bottom-[2.5rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p>
-                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-32 lg:bottom-0 lg:right-5 bounce-in-top'/></p>
-                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 lg:bottom-0 lg:right-[3rem] bounce-in-top blink-1 cursor-pointer'/></p>
+                    <div className=' hidden md:hidden lg:flex flex-col'>
+                        <p className='absolute top-0 right-[18rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-52'/></p>
+                        <p className='absolute bottom-[6rem] right-[0rem] overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
+                        <p className='absolute   right-[0rem] bottom-[6rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p>
+                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-28 bottom-[6rem] right-[1rem] bounce-in-top'/></p>
+                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 bottom-[6rem] right-[2rem] bounce-in-top blink-1 cursor-pointer'/></p>
                         
                     </div>
 
                     {/* responsive for phone screen  */}
-                    <div className=' md:hidden flex flex-col'>
-                        {/* <p className='absolute :top-0 left-[0rem] blink-1 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-48'/></p> */}
-                        <p className='absolute bottom-0 right-0 overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-80 '/></p>
-                        {/* <p className='absolute   right-[0rem] bottom-[0rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-72 '/></p> */}
-                        {/* <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-32 bottom-0 right-0 bounce-in-top'/></p> */}
-                        {/* <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-20 bottom-0 right-[0rem] bounce-in-top blink-1 cursor-pointer'/></p> */}
+                    <div className=' md:hidden flex flex-col  '>
+                        <p className='absolute bottom-[13rem] left-[1rem] blink-1 z-50 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-28'/></p>
+                        <p className='absolute bottom-[4rem] right-[2rem] overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-60 '/></p>
+                        <p className='absolute   right-[2rem] bottom-[4rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-56 '/></p>
+                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-24 bottom-[4rem] right-0 bounce-in-top'/></p>
+                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-16 bottom-[4rem] right-[1rem] bounce-in-top blink-1 cursor-pointer'/></p>
                         
                     </div>
+
+                    {/* responsive for tablet */}
+                    <div className=' hidden lg:hidden md:flex flex-col '>
+                        <p className='absolute bottom-[20rem] left-[22rem] blink-1 z-50 cursor-pointer '><Image src={hand} width={0} height={0} alt='image' className='w-28'/></p>
+                        <p className='absolute bottom-[10rem] right-[0rem] overflow-hidden'><Image src={cw} width={0} height={0} alt='image' className='w-60 '/></p>
+                        <p className='absolute   right-[0rem] bottom-[10rem] vibrate-1 cursor-pointer '><Image src={kw} width={0} height={0} alt='image' className='w-56 '/></p>
+                        <p className=''><Image src={cc} width={0} height={0} alt='image' className='absolute w-24 bottom-[10rem] right-0 bounce-in-top'/></p>
+                        <p className=''><Image src={kcard} width={0} height={0} alt='image' className='absolute w-16 bottom-[10rem] right-[1rem] bounce-in-top blink-1 cursor-pointer'/></p>
+                        
+                    </div>
+
                 </div>
 
                 {/* div d */}
 
-                {/* <div className='mt-40 relative flex'>
-                    <div className=' '>
-                        <p><Image src={bc} width={0} height={0} alt='image' className='w-96 absolute  top-0 left-[4rem]'/></p>
-
-                        <div className='flex gap-4'>
-                           
-
-                            <div className="flex gap-12">
-                                <div className='flex'>
-                                    <div className='flex flex-col gap-3 absolute mt-[1.5rem]'>
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-sky-500"><IoGiftSharp /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-green-500"><IoIosSend /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to Bank Account</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-orange-500"><RiBillFill /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-green-500"><GrAtm /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-sky-500"><IoGiftSharp /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-purple-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-red-500"><PiWebcam /></p>
-                                            <p className='font-bold text-purple-900 text-[12px] hover:text-orange-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                    </div>
-
-
-                                        
-
-                                        
-                                    <div className='flex flex-col gap-4 absolute mt-[4rem] ml-[16rem]'>
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-sky-500"><IoGiftSharp /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-red-500"><PiWebcam /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-green-500"><GrAtm /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                        <div className='flex w-fit bg-white gap-4 py-4 ring hover:bg-orange-300  rotate-in-2-fwd-cw cursor-pointer ring-green-300 px-5 rounded-[8px] '>
-                                            <p className="text-green-500"><IoIosSend /></p>
-                                            <p className='font-bold text-orange-900 text-[12px] hover:text-purple-600'>Send to username</p>
-                                            <p className=' text-neutral-600'><IoIosArrowForward /></p>
-                                        </div>
-
-                                    </div>
-                                </div>  
-                            </div>
-                        </div>
+                <div className='mt-20 relative md:flex'>
+                
+                    <div>
+                        <Image src={pk} height={0} width={0} alt='image' className='w-[32rem]'/>
                     </div>
 
 
-                    <div className='ml-auto mt-[8rem]'>
-                        <h1 className="text-4xl text-purple-900 font-bold">It is your money, we just <br /> help you manage it</h1>
+                    <div className='md:ml-[6rem]  lg:ml-[16rem] '>
+                        <h1 className="text-4xl text-purple-900 font-bold">It is your money, we just  help you manage it</h1>
 
-                        <p className=" text-sm mt-5">Save it, spend it, It is up you. Whatever you <br /> choose to do with your money, we will make sure it <br /> is done better and free of charg. We take responsibility <br /> for that.</p>
+                        <p className=" text-sm lg:text-base mt-5">Save it, spend it, It is up you. Whatever you <br /> choose to do with your money,  we will make <br /> sure  it  is done better and free of charge.<br /> We take responsibility for that.</p>
                     </div>
-                </div> */}
+                </div>
 
 
 
                 {/* div e */}
 
-                {/* <div className="mt-40 flex items-center ">
+                <div className="mt-20 md:flex ">
 
                     <div className="flex flex-col gap-5 ">
                         <h1 className="text-4xl text-purple-900 font-bold">Save money as you spend <br /> it, seriously.</h1>
@@ -282,24 +205,20 @@ const HomeSectionOne=()=>{
                         </div>
                     </div>
 
-                    <div className="ml-auto "><Image src={hc} width={0} height={0} alt="image" className="w-[25rem]"/></div>
-                </div> */}
+                    <div className=" md:ml-[6rem]  lg:ml-[16rem] "><Image src={pcard} width={0} height={0} alt="image" className="w-[25rem]"/></div>
+                </div>
 
                 {/* div f */}
-                {/* <div className="mt-40 flex items-center ">
+                <div className="mt-40 md:flex items-center ">
 
-                    <div className="relative roll-in-left cursor-pointer">
-                        <p><Image src={circle} width={0} height={0} alt="image" className="w-96"/></p>
-                        <p className="absolute top-[6.5rem] left-[5rem] vibrate-1"><Image src={bkc} width={0} height={0} alt="image" className="w-56"/></p>
-                        <p className="absolute top-[3rem] left-0"><Image src={blockc} width={0} height={0} alt="image" className=""/></p>
-                        <input type="checkbox" className="toggle toggle-error absolute top-[4.5rem] right-[4rem] " defaultChecked />
-                        <p className="blink-1"><Image src={stop} width={0} height={0} alt="image" className="absolute bottom-0 right-[4rem] w-20"/></p>
+                    <div>
+                        <Image src={bcard} width={0} height={0} alt='image' className=''/>
                     </div>
 
-
-                    <div className="flex flex-col gap-5 ml-auto ">
-                        <h1 className="text-4xl text-purple-900 font-bold">Turn off access, turn on <br /> safety.</h1>
-                        <p className="text-sm">Life happens. Milk spills. Debit cards go missing. <br /> If that ever happens, you can block your missing card <br /> on the app so no one can use it. We had like to see them try.</p>
+                   
+                    <div className="flex flex-col gap-5  pt-12 md:ml-[6rem]  lg:ml-[16rem] ">
+                        <h1 className="text-4xl text-purple-900 font-bold">Turn off access, <br />  turn on safety.</h1>
+                        <p className="text-sm">Life happens. Milk spills. Debit cards go <br /> missing.  If that ever happens, you can block your missing <br /> card on the app so no one can <br /> use  it.  We had like to see them try.</p>
 
                         <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
                             <h1><u className='text-purple-900'>Open An Account in Minutes</u></h1>
@@ -307,14 +226,14 @@ const HomeSectionOne=()=>{
                         </div>
 
                     </div>
-                </div> */}
+                </div>
 
                 {/* div g */}
-                {/* <div className="mt-40 flex items-center relative ">
+                <div className="mt-40 md:flex items-center relative ">
 
                     <div className="flex flex-col gap-5  ">
-                        <h1 className="text-4xl text-purple-900 font-bold">We are always happy to <br /> help you.</h1>
-                        <p className="text-sm">You can chat with us on the app, slide into our DMs, <br /> tweet, leave an Instagram comment, send an email <br /> or call. However you choose to reach out, there will always <br /> be a friendly person there to make your life easy.</p>
+                        <h1 className="text-4xl text-purple-900 font-bold">We are always <br /> happy to  help you.</h1>
+                        <p className="text-sm">You can chat with us on the app, slide <br />  into our DMs, tweet, leave an Instagram comment, <br /> send an email  or call. However  you choose to reach out,<br /> there will always  be a friendly person there to make your life easy.</p>
 
                         <div className='flex items-center cursor-pointer gap-3 font-bold  text-sm'>
                             <h1><u className='text-purple-900'>Get Help</u></h1>
@@ -324,20 +243,19 @@ const HomeSectionOne=()=>{
                     </div>
 
                     
-                    <div className="ml-auto   ">
-                        <Image src={svg1} width={0} height={0} alt="image" className="w-[33rem] roll-in-left"/>
-                        <p className=""><Image src={hello} width={0} height={0} alt="image" className="absolute top-0 right-0 w-60 blink-1 bounce-in-top cursor-pointer"/></p>
+                    <div className="md:ml-[6rem]  lg:ml-[16rem]  ">
+                        <Image src={ccard} width={0} height={0} alt='image' className=''/>
                     </div>
-                </div> */}
+                </div>
 
                 {/* div h */}
-                {/* <div className="mt-40 flex items-center">
+                <div className="mt-40 md:flex items-center">
 
                     <div className="  ">
                         <Image src={ccoin} width={0} height={0} alt="image" className=""/>
                     </div>
 
-                    <div className="flex flex-col gap-5 ml-auto ">
+                    <div className="flex flex-col gap-5 md:ml-[6rem]  lg:ml-[16rem] ">
                         <h1 className="text-4xl text-purple-900 font-bold">Fees as clear as glass.</h1>
                         <p className="text-sm">We are serious about free banking, and we will never,<br /> ever charge you for anything without your consent.</p>
 
@@ -347,7 +265,7 @@ const HomeSectionOne=()=>{
                         </div>
 
                     </div>
-                </div> */}
+                </div>
 
 
 

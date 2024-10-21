@@ -10,8 +10,7 @@ const Home=()=>{
         <>
             <div>
                 <HomeSectionOne/>
-                {/* <HomeSectionTwo/> */}
-
+                <HomeSectionTwo/>
             </div>
         </>
     )
